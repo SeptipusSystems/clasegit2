@@ -1,2 +1,2 @@
-# clasegit2
-clasegit2
+# Clase de html y css
+Proyecto comun de la clase.

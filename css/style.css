@@ -1,0 +1,11 @@
+span {
+  color: red;
+}
+
+ul {
+  list-style: square;
+}
+
+li {
+  display: inline-block;
+}

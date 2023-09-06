@@ -27,14 +27,14 @@ body {
 }
 
 body {
-  background: linear-gradient(to right, rgb(204, 204, 204), rgb(187, 187, 187));
+  background: linear-gradient(to right, rgb(210, 210, 210), rgb(182, 182, 182));
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .contenido {
   background-color: #eee;
-  border-radius: 15px;
+  border-radius: 20px;
   width: 1260px;
   margin: 80px auto;
   padding: 25px;
@@ -104,8 +104,8 @@ body {
 .insignia {
   position: absolute;
   z-index: 1;
-  top: 45px;
-  right: 85px;
+  top: 0;
+  right: 0;
   border-radius: 0.25rem;
   display: inline-block;
   padding: 0.25em 0.4em;
@@ -119,8 +119,15 @@ body {
   transform: translateY(-50%) translateX(50%);
 }
 
+.perfil .insignia {
+  top: 45px !important;
+  right: 85px !important;
+}
+
 .bg-rojo {
-  background-color: red;
+  background: linear-gradient(135deg, rgb(255, 100, 100), rgb(212, 0, 0));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .fg-blanco {

@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   display: block;
+  font-family: Roboto;
   /*border: solid 0.5px #000 !important;*/
 }
 
@@ -106,7 +107,7 @@ body {
   z-index: 1;
   top: 0;
   right: 0;
-  border-radius: 0.25rem;
+  border-radius: 0.45rem;
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
@@ -144,3 +145,30 @@ body {
   color: #bbb !important;
   text-align: center;
 }
+
+nav {
+  position: relative;
+  left: 40px;
+}
+
+.item span {
+  display: inline-block;
+}
+
+.icon {
+  margin: 0.5rem;
+}
+
+a {
+  color: inherit;
+}
+
+li:hover a {
+  color: rgb(0, 0, 200);
+  font-weight: 700;
+}
+
+/*
+li:hover {
+  background-color: rgb(200, 200, 200);
+}*/

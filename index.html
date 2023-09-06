@@ -4,30 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.korzh.com/metroui/v4/css/metro-icons.min.css"
+    />
     <title>Musa - Melodías en Línea</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="./catalogo.html"><span>Catalogo</span></a>
-        </li>
-        <li>
-          <a href=""><span>Letras de canciones</span></a>
-        </li>
-        <li>
-          <a href=""><span>Mis trabajo</span></a>
-        </li>
-        <li>
-          <a href=""><span>Blog</span></a>
-        </li>
-        <li>
-          <a href=""><span>Contacto</span></a>
-        </li>
-        <li>
-          <a href=""><span>Tienda</span></a>
-        </li>
-      </ul>
-    </nav>
+    <div class="contenido grilla">
+      <div class="fila">
+        <div class="nav">
+          <div class="perfil">
+            <div class="avatar redondo sombra">
+              <img src="./img/perfil.jpg" alt="imagen de perfil" id="perfil" />
+            </div>
+            <p class="name">Nombre Apellido</p>
+            <p class="email">correo@gmail.com</p>
+          </div>
+          <nav>
+            <ul>
+              <li id="catalogo">
+                <a href="./catalogo.html"><span>Catalogo</span></a>
+              </li>
+              <li>
+                <a href=""><span>Letras de canciones</span></a>
+              </li>
+              <li class="active">
+                <a href=""><span>Mis trabajo</span></a>
+              </li>
+              <li>
+                <a href=""><span>Blog</span></a>
+              </li>
+              <li>
+                <a href=""><span>Contacto</span></a>
+              </li>
+              <li class="active">
+                <a href=""><span>Tienda</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="columna">contenido</div>
+      </div>
+    </div>
   </body>
 </html>

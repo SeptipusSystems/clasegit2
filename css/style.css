@@ -1,3 +1,9 @@
+:root {
+  --gris-oscuro: rgb(182, 182, 182);
+  --gris-claro: rgb(210, 210, 210);
+  --padding-left: 40px;
+}
+
 *,
 ::after,
 ::before {
@@ -5,7 +11,7 @@
   padding: 0;
   display: block;
   font-family: Roboto;
-  /*border: solid 0.epx #000 !important;*/
+  border: solid 1px red !important;
 }
 
 base,
@@ -28,7 +34,7 @@ body {
 }
 
 body {
-  background: linear-gradient(to right, rgb(210, 210, 210), rgb(182, 182, 182));
+  background: linear-gradient(to right, var(--gris-claro), var(--gris-oscuro));
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -74,7 +80,7 @@ body {
 
 .perfil {
   position: relative;
-  padding: 40px 0;
+  padding: var(--padding-left) 0;
 }
 
 .avatar img {
@@ -146,7 +152,7 @@ body {
 
 nav {
   position: relative;
-  left: 40px;
+  padding-left: var(--padding-left);
 }
 
 .item span {
@@ -289,4 +295,44 @@ li:hover a {
   bottom: 0;
   border-radius: 1rem;
   padding: 1rem;
+}
+
+h1 {
+  font-size: 18px;
+  line-height: 36px;
+  padding-left: var(--padding-left);
+}
+
+.contenedor-imagenes {
+  padding: 0px;
+}
+
+.img {
+  overflow: hidden;
+  border-radius: 15px;
+  width: 200px;
+  height: 250px;
+  margin: 10px;
+  background-image: cover url("../img/imagen1.avif");
+}
+
+img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; /* Hereda el fondo del contenedor (la imagen) */
+  filter: blur(10px); /* Aplicar un desenfoque a la sombra */
+  opacity: 0.8; /* Ajustar la opacidad de la sombra */
+  z-index: -1; /* Coloca la sombra detrás de la imagen */
+  transform: translate(10px, 10px); /* Ajusta la posición de la sombra */
+  mix-blend-mode: multiply; /* Mezcla los colores de la sombra con los de la imagen */
+}
+
+.imagen {
+  display: inline-block;
+  width: min-content;
+  margin: 10px;
 }

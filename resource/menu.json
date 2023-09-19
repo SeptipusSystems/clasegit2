@@ -1,0 +1,32 @@
+[
+  {
+    "link": "./catalogo.html",
+    "icono": "icon-music",
+    "texto": "Catalogo"
+  },
+  {
+    "link": "./letras.html",
+    "icono": "icon-quill",
+    "texto": "Letras de canciones"
+  },
+  {
+    "link": "./trabajos.html",
+    "icono": "icon-books",
+    "texto": "Mis trabajo"
+  },
+  {
+    "link": "./blog.html",
+    "icono": "icon-ticket",
+    "texto": "Blog"
+  },
+  {
+    "link": "./contacto.html",
+    "icono": "icon-phone",
+    "texto": "Contacto"
+  },
+  {
+    "link": "./tienda.html",
+    "icono": "icon-libreoffice",
+    "texto": "Tienda"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "titulo": "Album Rojo",
+    "subtitulo": "Canciones rojas",
+    "imagen": "img/imagen1.avif"
+  },
+  {
+    "titulo": "Album Amarillo",
+    "subtitulo": "Mas sonadas amarillas",
+    "imagen": "img/imagen2.avif"
+  },
+  {
+    "titulo": "Azul carito",
+    "subtitulo": "Musica clarita",
+    "imagen": "img/imagen3.avif"
+  },
+  {
+    "titulo": "Gris feliz",
+    "subtitulo": "Musica gris feliz",
+    "imagen": "img/imagen4.avif"
+  },
+  {
+    "titulo": "Violeta",
+    "subtitulo": "Violeta musica",
+    "imagen": "img/imagen5.avif"
+  },
+  {
+    "titulo": "Rosado",
+    "subtitulo": "Album rosado",
+    "imagen": "img/imagen6.avif"
+  },
+  {
+    "titulo": "Azul",
+    "subtitulo": "Gira azul",
+    "imagen": "img/imagen7.avif"
+  }
+]

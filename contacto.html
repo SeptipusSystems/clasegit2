@@ -3,7 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.korzh.com/metroui/v4/css/metro-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/iconos.css" />
+    <title>Musa - Melodías en Línea - Catalogo</title>
+    <script src="./js/menu.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        // Obtiene el elemento que deseas eliminar
+        var elementoAEliminar = document.getElementById("load");
+
+        // Verifica si el elemento existe antes de intentar eliminarlo
+        if (elementoAEliminar) {
+          // Elimina el elemento
+          elementoAEliminar.remove();
+        }
+      });
+    </script>
   </head>
-  <body></body>
+  <body>
+    <div class="contenido grilla">
+      <div class="fila">
+        <div class="nav">
+          <div class="perfil">
+            <span class="insignia bg-rojo fg-blanco">Pro</span>
+            <div class="avatar redondo sombra">
+              <img src="./img/perfil.jpg" alt="imagen de perfil" />
+            </div>
+            <p class="name">Juanito Alimaña</p>
+            <p class="email">Jalimaña72@gmail.com</p>
+          </div>
+          <nav>
+            <ul id="menu"></ul>
+          </nav>
+        </div>
+        <div class="columna">
+          <div>
+            <div class="buscador">
+              <input type="text" placeholder="Buscar..." />
+            </div>
+            <div class="a-la-derecha">
+              <span class="m-2 mt-1 mb-0 mif-2x mif-bell fg-gris"></span>
+              <span class="m-2 mt-1 mb-0 mif-2x mif-cogs fg-gris"></span>
+              <span class="upgrade bg-rojo fg-blanco">Upgrade plan</span>
+            </div>
+          </div>
+          <div>
+            <h1>Contacto</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="load" class="load">
+      <span class="girando mif-cog"> </span>
+    </div>
+  </body>
 </html>

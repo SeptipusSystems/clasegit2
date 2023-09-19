@@ -324,34 +324,6 @@ h1 {
   background-position: center center;
 }
 
-.img1 {
-  background-image: url("../img/imagen1.avif");
-}
-
-.img2 {
-  background-image: url("../img/imagen2.avif");
-}
-
-.img3 {
-  background-image: url("../img/imagen3.avif");
-}
-
-.img4 {
-  background-image: url("../img/imagen4.avif");
-}
-
-.img5 {
-  background-image: url("../img/imagen5.avif");
-}
-
-.img6 {
-  background-image: url("../img/imagen6.avif");
-}
-
-.img7 {
-  background-image: url("../img/imagen7.avif");
-}
-
 img::before {
   content: "";
   position: absolute;

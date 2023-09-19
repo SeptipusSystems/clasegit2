@@ -14,6 +14,8 @@
     />
     <link rel="stylesheet" href="./css/iconos.css" />
     <title>Musa - Melodías en Línea</title>
+    <script src="./js/menu.js"></script>
+    <script src="./js/galeria.js"></script>
     <script>
       window.addEventListener("load", function () {
         // Obtiene el elemento que deseas eliminar
@@ -40,41 +42,7 @@
             <p class="email">Jalimaña72@gmail.com</p>
           </div>
           <nav>
-            <ul>
-              <li class="item">
-                <a href="./catalogo.html">
-                  <span class="icon icon-music"></span><span>Catalogo</span>
-                </a>
-              </li>
-              <li class="item">
-                <a href=""
-                  ><span class="icon icon-quill"></span
-                  ><span>Letras de canciones</span></a
-                >
-              </li>
-              <li class="item">
-                <a href=""
-                  ><span class="icon icon-books"></span
-                  ><span>Mis trabajo</span></a
-                >
-              </li>
-              <li class="item">
-                <a href=""
-                  ><span class="icon icon-ticket"></span><span>Blog</span></a
-                >
-              </li>
-              <li class="item">
-                <a href=""
-                  ><span class="icon icon-phone"></span><span>Contacto</span></a
-                >
-              </li>
-              <li class="item">
-                <a href=""
-                  ><span class="icon icon-libreoffice"></span
-                  ><span>Tienda</span></a
-                >
-              </li>
-            </ul>
+            <ul id="menu"></ul>
           </nav>
         </div>
         <div class="columna">
@@ -91,42 +59,8 @@
           <div>
             <h1>Billboard Topchart</h1>
             <div class="contenedor-imagenes">
-              <div class="imagenes">
-                <div class="imagen">
-                  <div class="img img1"></div>
-                  <p class="name">Coloring Book</p>
-                  <p class="email">Pop King</p>
-                </div>
-                <div class="imagen">
-                  <div class="img img2"></div>
-                  <p class="name">Coloring Book</p>
-                  <p class="email">Pop King</p>
-                </div>
-                <div class="imagen">
-                  <div class="img img3"></div>
-                  <p class="name">Coloring Book</p>
-                  <p class="email">Pop King</p>
-                </div>
-                <div class="imagen">
-                  <div class="img img4"></div>
-                  <p class="name">Coloring Book</p>
-                  <p class="email">Pop King</p>
-                </div>
-                <div class="imagen">
-                  <div class="img img5"></div>
-                  <p class="name">Coloring Book</p>
-                  <p class="email">Pop King</p>
-                </div>
-                <div class="imagen">
-                  <div class="img img6"></div>
-                  <p class="name">Coloring Book</p>
-                  <p class="email">Pop King</p>
-                </div>
-                <div class="imagen">
-                  <div class="img img7"></div>
-                  <p class="name">Coloring Book</p>
-                  <p class="email">Pop King</p>
-                </div>
+              <div id="galeria" class="imagenes">
+                
               </div>
             </div>
           </div>

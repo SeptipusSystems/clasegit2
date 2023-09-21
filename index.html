@@ -26,6 +26,18 @@
           // Elimina el elemento
           elementoAEliminar.remove();
         }
+
+        var elemento = document.getElementById("upgrade");
+        elemento.addEventListener("click", function () {
+          alert("presionaste el boton upgrade");
+        });
+
+        document.addEventListener("keydown",  function (e) {
+          if (e.ctrlKey && e.key === "p") {
+            alert("quieres imprimir pero no se puede");
+            e.preventDefault();
+          }
+        });
       });
     </script>
   </head>
@@ -53,15 +65,15 @@
             <div class="a-la-derecha">
               <span class="m-2 mt-1 mb-0 mif-2x mif-bell fg-gris"></span>
               <span class="m-2 mt-1 mb-0 mif-2x mif-cogs fg-gris"></span>
-              <span class="upgrade bg-rojo fg-blanco">Upgrade plan</span>
+              <span id="upgrade" class="upgrade bg-rojo fg-blanco"
+                >Upgrade plan</span
+              >
             </div>
           </div>
           <div>
             <h1>Billboard Topchart</h1>
             <div class="contenedor-imagenes">
-              <div id="galeria" class="imagenes">
-                
-              </div>
+              <div id="galeria" class="imagenes"></div>
             </div>
           </div>
         </div>

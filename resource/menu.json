@@ -1,5 +1,10 @@
 [
   {
+    "link": "./index.html",
+    "icono": "mif-home",
+    "texto": "Home"
+  },
+  {
     "link": "./catalogo.html",
     "icono": "icon-music",
     "texto": "Catalogo"
@@ -26,7 +31,12 @@
   },
   {
     "link": "./tienda.html",
-    "icono": "icon-libreoffice",
+    "icono": "mif-add-shopping-cart",
     "texto": "Tienda"
+  },
+  {
+    "link": "./otro.html",
+    "icono": "mif-alarm-on",
+    "texto": "Otro"
   }
 ]

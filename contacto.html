@@ -47,7 +47,7 @@
         <div class="columna">
           <div>
             <div class="buscador">
-              <input type="text" placeholder="Buscar..." />
+              <input type="search" placeholder="Buscar..." />
             </div>
             <div class="a-la-derecha">
               <span class="m-2 mt-1 mb-0 mif-2x mif-bell fg-gris"></span>
@@ -57,95 +57,40 @@
           </div>
           <div>
             <h1>Contacto</h1>
-            <form
-              id="mi_formulario"
-              action="./index.html"
-              method="post"
-              enctype="multipart/form-data"
-              target="_blank"
-              name="miFormulario"
-            >
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" />
-
-              <label for="contrasena">Contraseña:</label>
-              <input type="password" id="contrasena" name="contrasena" />
-
-              <label for="edad">Edad:</label>
-              <input type="number" id="edad" name="edad" min="0" max="120" />
-
-              <label for="correo">Correo electrónico:</label>
-              <input type="email" id="correo" name="correo" />
-
-              <input
-                type="checkbox"
-                id="opcion1"
-                name="opcion1"
-                value="valor1"
-              />
-              <label for="opcion1">Opción 1</label><br />
-              <input
-                type="checkbox"
-                id="opcion2"
-                name="opcion2"
-                value="valor2"
-              />
-              <label for="opcion2">Opción 2</label><br />
-
-              <input type="radio" id="opcionA" name="grupoOpciones" value="A" />
-              <label for="opcionA">Opción A</label><br />
-              <input type="radio" id="opcionB" name="grupoOpciones" value="B" />
-              <label for="opcionB">Opción B</label><br />
-
-              <label for="comentarios">Comentarios:</label><br />
-              <textarea
-                id="comentarios"
-                name="comentarios"
-                rows="4"
-                cols="50"
-              ></textarea>
-
-              <label for="ciudad">Ciudad:</label><br />
-              <select id="ciudad" name="ciudad">
-                <option value="nueva-york">Nueva York</option>
-                <option value="los-angeles">Los Ángeles</option>
-                <option value="chicago">Chicago</option>
-                <option value="otra">Otra ciudad</option>
-              </select>
-
-              <label for="archivo">Cargar archivo:</label>
-              <input type="file" id="archivo" name="archivo" />
-
-              <label for="fecha">Fecha de nacimiento:</label>
-              <input type="date" id="fecha" name="fecha" />
-
-              <label for="hora">Hora de inicio:</label>
-              <input type="time" id="hora" name="hora" />
-
-              <label for="fecha-hora">Fecha y hora de reserva:</label>
-              <input type="datetime-local" id="fecha-hora" name="fecha-hora" />
-
-              <label for="mes">Mes de vencimiento:</label>
-              <input type="month" id="mes" name="mes" />
-
-              <label for="semana">Semana de planificación:</label>
-              <input type="week" id="semana" name="semana" />
-
-              <label for="color">Color favorito:</label>
-              <input type="color" id="color" name="color" />
-
-              <label for="volumen">Volumen:</label>
-              <input
-                type="range"
-                id="volumen"
-                name="volumen"
-                min="0"
-                max="100"
-              />
-
-              <label for="busqueda">Buscar:</label>
-              <input type="search" id="busqueda" name="busqueda" />
-              <button>Enviar</button>
+            <form action="./index.html" method="post">
+              <div class="row">
+                <div class="cell-5">
+                  <input type="text" name="" id="" placeholder="Nombre*" />
+                </div>
+                <div class="cell-7">
+                  <input type="email" name="" id="" placeholder="Mail*" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell-7">
+                  <input type="text" name="" id="" placeholder="Pagina web*" />
+                </div>
+                <div class="cell-5">
+                  <input type="tel" name="" id="" placeholder="Telefono*" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell-12">
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="¿Quieres contarnos algo?"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell-12">
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Acepto la politica de privacidad</label>
+                </div>
+              </div>
               <input type="submit" value="Envar_nativo" />
             </form>
           </div>

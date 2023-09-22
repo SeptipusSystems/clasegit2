@@ -476,3 +476,52 @@ img::before {
 .contenedor-imagenes::-webkit-scrollbar-track:horizontal {
   background-color: #f0f0f0; /* Color del track (barra de fondo) */
 }
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+[class^="cell"] {
+  padding: 0.5rem;
+}
+
+.cell-5 {
+  grid-column: span 5;
+}
+
+.cell-7 {
+  grid-column: span 7;
+}
+
+.cell-12 {
+  grid-column: span 12;
+}
+
+input {
+  padding: 0.8rem;
+  min-width: CALC(100% - 1.6rem);
+}
+
+[type="search"] {
+  padding: initial;
+  min-width: initial;
+}
+
+[type="checkbox"] {
+  min-width: fit-content;
+  display: inline-block;
+}
+
+[type="submit"] {
+  min-width: 200px;
+  border-radius: 2rem;
+}
+textarea {
+  padding: 0.8rem;
+  min-width: CALC(100% - 1.6rem);
+}
+
+label {
+  display: inline-block;
+}

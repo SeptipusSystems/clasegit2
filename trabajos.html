@@ -3,7 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.korzh.com/metroui/v4/css/metro-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/iconos.css" />
+    <title>Musa - Melodías en Línea</title>
+    <script src="./js/menu.js"></script>
+    <script src="./js/galeria.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        // Obtiene el elemento que deseas eliminar
+        var elementoAEliminar = document.getElementById("load");
+
+        // Verifica si el elemento existe antes de intentar eliminarlo
+        if (elementoAEliminar) {
+          // Elimina el elemento
+          elementoAEliminar.remove();
+        }
+
+        var elemento = document.getElementById("upgrade");
+        elemento.addEventListener("click", function () {
+          alert("presionaste el boton upgrade");
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.ctrlKey && e.key === "p") {
+            alert("quieres imprimir pero no se puede");
+            e.preventDefault();
+          }
+        });
+      });
+    </script>
   </head>
-  <body></body>
+  <body>
+    <div class="contenido grilla">
+      <div class="fila">
+        <div class="nav">
+          <div class="perfil">
+            <span class="insignia bg-rojo fg-blanco">Pro</span>
+            <div class="avatar redondo sombra">
+              <img src="./img/perfil.jpg" alt="imagen de perfil" />
+            </div>
+            <p class="name">Juanito Alimaña</p>
+            <p class="email">Jalimaña72@gmail.com</p>
+          </div>
+          <nav>
+            <ul id="menu"></ul>
+          </nav>
+        </div>
+        <div class="columna">
+          <div>
+            <div class="buscador">
+              <input type="text" placeholder="Buscar..." />
+            </div>
+            <div class="a-la-derecha">
+              <span class="m-2 mt-1 mb-0 mif-2x mif-bell fg-gris"></span>
+              <span class="m-2 mt-1 mb-0 mif-2x mif-cogs fg-gris"></span>
+              <span id="upgrade" class="upgrade bg-rojo fg-blanco"
+                >Upgrade plan</span
+              >
+            </div>
+          </div>
+          <div>
+            <h1>Mis trabajos</h1>
+            <div class="trabajos">
+              <div><div class="b-round">1</div></div>
+              <div class="span-column-2">
+                <div class="b-round">
+                  <div class="round weekend squder-100 centrado"></div>                  
+                  <div class="round women-1 squder-10"></div>
+                  <div class="round women-2 squder-5"></div>
+                  <span class="round bg-orange fg-white play mif-play"></span>
+                </div>
+              </div>
+              <div class="span-row-2"><div class="b-round">3</div></div>
+              <div><div class="b-round">4</div></div>
+              <div><div class="b-round">5</div></div>
+              <div><div class="b-round">6</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="load" class="load">
+      <span class="girando mif-cog"> </span>
+    </div>
+  </body>
 </html>

@@ -11,6 +11,21 @@
 }
 
 body {
+  --s: 120px; /* control the size */
+  --_c: #72e21f /* color 1 */ 25%, #0000 0;
+  --_g1: conic-gradient(at 62.5% 12.5%, var(--_c));
+  --_g2: conic-gradient(at 87.5% 62.5%, var(--_c));
+  --_g3: conic-gradient(at 25% 12.5%, var(--_c));
+  background: var(--_g1) calc(var(--s) / -8) calc(var(--s) / 2),
+    var(--_g1) calc(-3 * var(--s) / 8) calc(var(--s) / 4),
+    var(--_g2) calc(3 * var(--s) / 8) calc(var(--s) / 4),
+    var(--_g2) calc(var(--s) / -8) 0, var(--_g3) 0 calc(var(--s) / -4),
+    var(--_g3) calc(var(--s) / -4) 0,
+    conic-gradient(at 87.5% 87.5%, var(--_c)) calc(var(--s) / 8) 0 #044012; /* color 2 */
+  background-size: var(--s) var(--s);
+}
+
+body {
   font-family: Roboto;
   background-color: #f0f0f0;
   display: grid;
@@ -42,9 +57,10 @@ h3 {
   /* height: CALC(100% - 1rem - 1.6rem);*/
   border: none !important;
   padding: 1.2rem;
-  border-radius: 0.1rem;
+  border-radius: 1rem;
   background: linear-gradient(90deg, #fefefe, #f0f0f0);
-  box-shadow: 5px 0px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 8px rgba(20, 20, 20, 0.2);
 }
 
 .div-1 {
@@ -222,7 +238,7 @@ h3 {
   border-radius: 0.6rem;
   padding: 1rem;
   background: linear-gradient(90deg, #00d0f0, #0090f0);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 8px #0090f0, inset -2px -2px 8px #00d0f0;
 }
 
 .search {

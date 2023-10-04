@@ -323,21 +323,7 @@ h1 {
   margin: 10px;
   background-size: cover;
   background-position: center center;
-}
-
-img::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: inherit; /* Hereda el fondo del contenedor (la imagen) */
-  filter: blur(10px); /* Aplicar un desenfoque a la sombra */
-  opacity: 0.8; /* Ajustar la opacidad de la sombra */
-  z-index: -1; /* Coloca la sombra detrás de la imagen */
-  transform: translate(10px, 10px); /* Ajusta la posición de la sombra */
-  mix-blend-mode: multiply; /* Mezcla los colores de la sombra con los de la imagen */
+  -webkit-box-reflect: below -1px linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent);
 }
 
 .imagen {
@@ -464,18 +450,38 @@ img::before {
   }
 }
 
+html {
+  cursor: url("../img/youtube.svg"), auto;
+}
+
+html::-webkit-scrollbar {
+  width: 16px; /* Ancho del scrollbar */
+  height: 16px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #ff7b00; /* Color del thumb (barra de desplazamiento) */
+  border-radius: 8px; /* Bordes redondeados del thumb */
+}
+
 .contenedor-imagenes::-webkit-scrollbar {
   width: 12px; /* Ancho del scrollbar */
   height: 12px;
 }
 
+::-webkit-scrollbar-track {
+  background-color: #0f0f0f; /* Color del track (barra de fondo) */
+}
+
 .contenedor-imagenes::-webkit-scrollbar-thumb:horizontal {
-  background-color: #007bff; /* Color del thumb (barra de desplazamiento) */
+  background-color: #7b7b7b; /* Color del thumb (barra de desplazamiento) */
   border-radius: 6px; /* Bordes redondeados del thumb */
 }
 
 .contenedor-imagenes::-webkit-scrollbar-track:horizontal {
   background-color: #f0f0f0; /* Color del track (barra de fondo) */
+  border-radius: 6px; /* Bordes redondeados del thumb */
+  box-shadow: inset 0px 0px 15px rgba(1, 1, 1, 0.3);
 }
 
 .row {
@@ -673,4 +679,10 @@ td:nth-child(n + 4) {
 
 .play::before {
   font-size: 1.2rem;
+}
+
+#cross {
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
 }

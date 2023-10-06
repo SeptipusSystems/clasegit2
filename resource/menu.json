@@ -30,9 +30,26 @@
     "texto": "Contacto"
   },
   {
-    "link": "./tienda.html",
+    "link": "#",
     "icono": "mif-add-shopping-cart",
-    "texto": "Tienda"
+    "texto": "Tienda",
+    "submenu": [
+      {
+        "link": "./catalogo.html",
+        "icono": "mif-alarm-on",
+        "texto": "Descuentos"
+      },
+      {
+        "link": "./letras.html",
+        "icono": "mif-add-shopping-cart",
+        "texto": "Mis compras anteriores"
+      },
+      {
+        "link": "./trabajos.html",
+        "icono": "mif-pencil",
+        "texto": "Mis compras"
+      }
+    ]
   },
   {
     "link": "./otro.html",

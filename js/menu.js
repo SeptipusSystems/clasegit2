@@ -11,6 +11,7 @@ function agregar_item(menu, texto, icon, link) {
   item.appendChild(a);
   item.className = "item";
   menu.appendChild(item);
+  return item;
 }
 
 window.addEventListener("load", function () {
@@ -26,7 +27,45 @@ window.addEventListener("load", function () {
       for (var clave in data) {
         if (data.hasOwnProperty(clave)) {
           var valor = data[clave];
-          agregar_item(menu, valor["texto"], valor["icono"], valor["link"]);
+          item = agregar_item(
+            menu,
+            valor["texto"],
+            valor["icono"],
+            valor["link"]
+          );
+          if ("submenu" in valor) {
+            var submenu = document.createElement("ul");
+            submenu.className = "submenu";
+            submenu.style.display = "none";
+            submenu.style.height = 0;
+            item.appendChild(submenu);
+            var w = 0;
+            for (var clave in valor["submenu"]) {
+              var v2 = valor["submenu"][clave];
+              agregar_item(submenu, v2["texto"], v2["icono"], v2["link"]);
+              w++;
+            }
+            item.addEventListener("click", function (e) {
+              if (submenu.style.display == "none") {
+                submenu.style.display = "grid";
+                submenu.style.height = w * 32 + "px";
+              } else {
+                submenu.style.display = "none";
+                submenu.style.height = 0;
+              }
+              e.preventDefault();
+            });
+
+            item.addEventListener("mouseover", function (e) {
+              submenu.style.display = "block";
+              submenu.style.height = w * 32 + "px";
+            });
+
+            item.addEventListener("mouseout", function (e) {
+              submenu.style.display = "none";
+              submenu.style.height = 0;
+            });
+          }
         }
       }
     })

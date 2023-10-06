@@ -310,9 +310,54 @@ h1 {
   width: 780px;
 }
 
+.with-out {
+  overflow: hidden !important;
+}
+
+.anterior,
+.siguiente {
+  position: relative !important;
+  top: 50%;
+  z-index: 10;
+  padding: 5px;
+  background-color: #7b7b7b;
+  color: white;
+}
+
+.anterior {
+  transform: translatey(-50%);
+  float: left;
+}
+
+.siguiente {
+  transform: translatey(50%);
+  float: right;
+}
+
 .imagenes {
   height: 330px;
   width: max-content;
+  position: relative;
+  display: grid;
+  transition: right 1s ease;
+  animation-name: carrusel;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes carrusel {
+  0% {
+    right: 10px;
+  }
+  50% {
+    right: 880px;
+  }
+  100% {
+    right: 10px;
+  }
+}
+
+.anterior {
 }
 
 .img {
@@ -450,9 +495,9 @@ h1 {
   }
 }
 
-html {
+/*html {
   cursor: url("../img/youtube.svg"), auto;
-}
+}*/
 
 html::-webkit-scrollbar {
   width: 16px; /* Ancho del scrollbar */
@@ -685,4 +730,27 @@ td:nth-child(n + 4) {
   right: 10px;
   top: 10px;
   cursor: pointer;
+}
+
+ul {
+  transition: height 1s ease;
+}
+
+.submenu {
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  background-color: #ddd;
+  
+}
+
+.whatsapp {
+  position: fixed !important;
+  bottom: 50px;
+  right: 50px;
+  font-size: xx-large;
+  background-color: #22ff00;
+  color: #ddd;
+  border-radius: 50%;
+  z-index: 100;
 }

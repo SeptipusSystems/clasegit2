@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./css/iconos.css" />
     <title>Musa - Melodías en Línea - Catalogo</title>
     <script src="./js/menu.js"></script>
+    <script src="./js/galeria.js"></script>
+    <script src="./js/no-scroll.js"></script>
     <script>
       window.addEventListener("load", function () {
         // Obtiene el elemento que deseas eliminar
@@ -29,6 +31,7 @@
     </script>
   </head>
   <body>
+    <span class="whatsapp mif-whatsapp"></span>
     <div class="contenido grilla">
       <div class="fila">
         <div class="nav">
@@ -57,6 +60,11 @@
           </div>
           <div>
             <h1>Catalogo</h1>
+            <div class="contenedor-imagenes with-out">
+              <span id="anterior" class="anterior mif-arrow-left"></span>
+              <span id="siguiente" class="siguiente mif-arrow-right"></span>
+              <div id="galeria" class="imagenes"></div>
+            </div>
           </div>
         </div>
       </div>

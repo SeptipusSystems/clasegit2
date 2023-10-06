@@ -33,5 +33,10 @@
     "titulo": "Azul",
     "subtitulo": "Gira azul",
     "imagen": "img/imagen7.avif"
+  },
+  {
+    "titulo": "Album Amarillo",
+    "subtitulo": "Mas sonadas amarillas",
+    "imagen": "img/imagen2.avif"
   }
 ]

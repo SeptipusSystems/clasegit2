@@ -1,3 +1,5 @@
+var i;
+
 function agregar_galeria(galeria, titulo, subtitulo, imagen) {
   var div = document.createElement("div");
   div.className = "imagen";
@@ -26,6 +28,7 @@ window.addEventListener("load", function () {
     })
     .then((data) => {
       // Trabajar con los datos obtenidos
+      i = 0;
       for (var clave in data) {
         if (data.hasOwnProperty(clave)) {
           var valor = data[clave];
@@ -35,8 +38,10 @@ window.addEventListener("load", function () {
             valor["subtitulo"],
             valor["imagen"]
           );
+          i++;
         }
       }
+      galeria.style.gridTemplateColumns = "repeat(" + i + ", 1fr)";
     })
     .catch((error) => {
       // Capturar y manejar errores de la solicitud

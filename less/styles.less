@@ -1,0 +1,36 @@
+.create-padding-classes(@start: 0, @end: 20) {
+  .padding-loop (@i: @start) when (@i <= @end) {
+    .padding-@{i} {
+      padding: @i * 2px;
+      margin: @i / 2rem;
+    }
+    .padding-loop((@i + 1));
+  }
+  .padding-loop();
+}
+.create-padding-classes();
+
+.create-bg-classes(@colores) {
+  .bg-loop(@i, @colores) when (@i <= length(@colores)) {
+   @colorInfo: extract(@colores, @i);
+    @nombre: extract(@colorInfo, 1);
+    @valor: extract(@colorInfo, 2);
+
+    .bg-@{nombre} {
+      background-color: @valor;
+    }
+
+  .fg-@{nombre} {
+  color: @valor;
+  }
+               .bg-@{nombre}-hover::hover {
+               background-color: @valor !important;
+               }
+    .bg-loop(@i + 1, @colores);
+  }
+  .bg-loop(1, @colores);
+}
+
+// Ejemplo de uso:
+@misColores: rojo #FF0000, verde #00FF00, azul #0000FF, megenta #c30de8;
+.create-bg-classes(@misColores);
